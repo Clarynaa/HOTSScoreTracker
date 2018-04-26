@@ -196,6 +196,5 @@
         android:layout_marginTop="11dp"
         android:scaleType="fitCenter"
         android:src="@drawable/hots" />
-
-    <!--image link: https://www.redbull.com/us-en/how-overwatch-fits-into-heroes-of-the-storm -->
+    
 </RelativeLayout>
