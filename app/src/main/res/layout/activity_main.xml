@@ -7,7 +7,6 @@
     tools:context="com.example.android.scorekeeper.MainActivity">
 
 
-
     <LinearLayout
         android:id="@+id/TeamALayout"
         android:layout_width="wrap_content"
@@ -50,28 +49,31 @@
             android:text="0"
             android:textColor="@android:color/black"
             android:textSize="30sp" />
+
         <Button
             android:id="@+id/AKillPlus"
-            android:onClick="AKillPlus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
+            android:onClick="AKillPlus"
             android:text="+ Kill"
             android:textSize="20sp" />
+
         <Button
             android:id="@+id/ADeathPlus"
-            android:onClick="ADeathPlus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
+            android:onClick="ADeathPlus"
             android:text="+ Death"
             android:textSize="20sp" />
+
         <Button
             android:id="@+id/AWinPlus"
-            android:onClick="AWinPlus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
+            android:onClick="AWinPlus"
             android:text="+ Win"
             android:textSize="20sp" />
     </LinearLayout>
@@ -122,70 +124,77 @@
             android:text="0"
             android:textColor="@android:color/black"
             android:textSize="30sp" />
+
         <Button
             android:id="@+id/BKillPlus"
-            android:onClick="BKillPlus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
+            android:onClick="BKillPlus"
             android:text="+ Kill"
             android:textSize="20sp" />
+
         <Button
             android:id="@+id/BDeathPlus"
-            android:onClick="BDeathPlus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
+            android:onClick="BDeathPlus"
             android:text="+ Death"
             android:textSize="20sp" />
+
         <Button
             android:id="@+id/BWinPlus"
-            android:onClick="BWinPlus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
+            android:onClick="BWinPlus"
             android:text="+ Win"
             android:textSize="20sp" />
     </LinearLayout>
+
     <Button
         android:id="@+id/Reset"
-        android:onClick="Reset"
-        android:layout_marginTop="11dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/TeamALayout"
         android:layout_centerHorizontal="true"
-        android:text="Reset"/>
+        android:layout_marginTop="11dp"
+        android:onClick="Reset"
+        android:text="Reset" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kills"
-        android:textColor="@android:color/black"
-        android:textAllCaps="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:paddingTop="50dp"
-        android:textSize="30sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"/>
+        android:text="Kills"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Deaths"
-        android:textColor="@android:color/black"
-        android:textAllCaps="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:paddingTop="90dp"
-        android:textSize="30sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"/>
+        android:text="Deaths"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wins"
-        android:textColor="@android:color/black"
-        android:textAllCaps="true"
-        android:paddingTop="130dp"
-        android:textSize="30sp"
         android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:paddingTop="130dp"
+        android:text="Wins"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -196,5 +205,5 @@
         android:layout_marginTop="11dp"
         android:scaleType="fitCenter"
         android:src="@drawable/hots" />
-    
+
 </RelativeLayout>
