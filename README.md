@@ -2,4 +2,4 @@
 
 This is a simple app to keep track of a series of matches between two teams in Heroes of the Storm.  Created for Grow with Google  Android Basics scholarship
 
-Heroes of the Storm image used from https://www.redbull.com/us-en/how-overwatch-fits-into-heroes-of-the-storm dated Jan 22 2018
+Heroes of the Storm image used from https://www.flickr.com/photos/bagogames/20710865648 dated August 26, 2015 under the Creative Commons 2.0 license which can be found here: https://creativecommons.org/licenses/by/2.0/legalcode
