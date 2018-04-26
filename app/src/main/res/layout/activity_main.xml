@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.scorekeeper.MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/TeamALayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TeamA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="70dp"
+            android:paddingTop="8dp"
+            android:text="Team A"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/AKills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/ADeaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/AWins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/AKillPlus"
+            android:onClick="AKillPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="+ Kill"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/ADeathPlus"
+            android:onClick="ADeathPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="+ Death"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/AWinPlus"
+            android:onClick="AWinPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="+ Win"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/TeamALayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TeamB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="70dp"
+            android:paddingTop="8dp"
+            android:text="Team B"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/BKills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/TeamB"
+            android:paddingLeft="100dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/BDeaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/BWins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/BKillPlus"
+            android:onClick="BKillPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="+ Kill"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/BDeathPlus"
+            android:onClick="BDeathPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="+ Death"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/BWinPlus"
+            android:onClick="BWinPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="+ Win"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/Reset"
+        android:onClick="Reset"
+        android:layout_marginTop="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TeamALayout"
+        android:layout_centerHorizontal="true"
+        android:text="Reset"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kills"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:paddingTop="50dp"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deaths"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:paddingTop="90dp"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wins"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:paddingTop="130dp"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Reset"
+        android:layout_marginTop="11dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/hots" />
+
+    <!--image link: https://www.redbull.com/us-en/how-overwatch-fits-into-heroes-of-the-storm -->
+</RelativeLayout>
